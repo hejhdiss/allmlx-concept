@@ -301,7 +301,7 @@ allmlx build file.almlx --target=wasm32-wasi
 | **Code Generation** | Manual only | AI-powered + manual |
 | **Portability** | Limited | Single-file bundling |
 | **Extensibility** | Fixed | Plugin-based architecture |
-| **Cross-Language Imports** | Python → C only | Bidirectional, multi-language |
+| **Cross-Language Imports** | C → Python only | Bidirectional, multi-language |
 
 ## Target Audience
 
@@ -329,7 +329,7 @@ ALLMLX is designed as a comprehensive compiler software that will be distributed
 
 ```bash
 # Binary distribution (planned)
-curl -fsSL https://allmlx.org/install.sh | sh
+curl -fsSL https://allmlx-domain/install.sh | sh
 
 or any another possible methods
 
