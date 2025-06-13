@@ -65,11 +65,13 @@ Each block would support metadata for dependency management:
 
 ```
 %py name=main requires=sort_fn,utils export=result
-# Python code here
-%endpy
-
 %use llm:sort_fn    # Import code from LLM block named 'sort_fn'
 %use c:utils        # Import from C block named 'utils'
+
+# Python code here
+
+%endpy
+
 ```
 
 ## Conceptual Example
@@ -77,7 +79,7 @@ Each block would support metadata for dependency management:
 Here's a conceptual `.almlx` file demonstrating the proposed multi-language integration with LLM code generation:
 
 ```almlx
-%llm name=sort_fn api_key='sk-xxx' api=groq model=mixtral lang=python
+%llm name=sort_fn api_key='sk-xxx' api=groq model=mixtral lang=python 
 Write a Python function called insertion_sort that takes a list of integers and returns a sorted list using the insertion sort algorithm. Include proper error handling and docstring.
 %endllm
 
@@ -98,7 +100,6 @@ long long factorial(int n) {
 %use llm:sort_fn
 %use c:math_utils
 
-import ctypes
 
 def main():
     # Use LLM-generated sorting function
@@ -117,14 +118,6 @@ if __name__ == "__main__":
     main()
 %endpy
 
-%sh name=build_logger
-#!/bin/bash
-echo "Build started at: $(date)"
-echo "Building ALLMLX project..."
-echo "Languages detected: Python, C, Shell"
-echo "LLM blocks: 1"
-echo "Build completed at: $(date)"
-%endsh
 ```
 
 ## Proposed CLI Commands
