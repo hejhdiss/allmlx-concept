@@ -338,6 +338,7 @@ pip install allmlx
 brew install allmlx
 apt install allmlx
 dnf install allmlx
+winget install allmlx
 
 or any another possible methods
 
