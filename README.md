@@ -382,10 +382,10 @@ Both licenses offer:
 - **Patent Grant** - Apache 2.0 provides additional patent protection
 - **Liability Protection** - Standard open-source liability disclaimers
 
-*If you create code, tools, or software based on this structure or idea, you must:
+If you create code, tools, or software based on this structure or idea, you must:
 - Attribute the original author (Muhammed Shafin P)
 - License all derived ideas and documentation under CC BY-SA 4.0
-- Strongly consider using a permissive open-source license for your code (e.g., MIT, Apache 2.0)*
+- Strongly consider using a permissive open-source license for your code (e.g., MIT, Apache 2.0)
 
 ---
 
